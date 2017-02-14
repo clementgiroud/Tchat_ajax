@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.tchat.ajax$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.tchat.ajax$
+RewriteCond %{REQUEST_URI} !web/
+RewriteRule (.*) /web/$1 [L]
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/page.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/chat.css')}}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="js/jScrollPane/jquery.mousewheel.js"></script>
+    <script src="js/jScrollPane/jScrollPane.min.js"></script>
+    <script src="js/script.js"></script>
+{% endblock %}
+
+</body>
+</html>
